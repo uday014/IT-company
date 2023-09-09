@@ -1,0 +1,257 @@
+.banner {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 800px;
+
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+.dark-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 675px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.dark-overlay2 {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.main-nav {
+  background-color: transparent; /* Set background color to transparent */
+  z-index: 1000;
+}
+.main-nav a {
+  color: white;
+}
+
+.main-nav .logo {
+  width: 110px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.head {
+  position: absolute;
+  margin-left: 4%;
+  margin-top: -35%;
+}
+
+.head h1 {
+  font-size: 500%;
+  color: white;
+}
+
+.head h4 {
+  color: white;
+  font-weight: 300;
+}
+
+.abt {
+  border-radius: 2px;
+  max-width: 95%;
+  margin-top: -17%;
+
+  background-color: whitesmoke;
+}
+
+.abt h5 {
+  padding: 2% 2%;
+  color: black;
+  font-weight: 400;
+}
+
+.abt h1 {
+  font-size: 350%;
+  padding-left: 2%;
+  font-weight: 700;
+}
+
+.abt li {
+  padding: 0 !important;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+/* ..servvice */
+
+hr {
+  border: none; /* Remove the default line */
+  border-top: 3px solid black; /* Add a new line with custom styling */
+  margin: 40px 18px;
+}
+.service p {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 18px;
+}
+section {
+  padding: 20px;
+  /* background-color: #f4f4f4; */
+  margin: 20px 0;
+}
+.service h2 {
+  margin-left: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.service {
+  margin-top: 40px;
+}
+
+.home-cards {
+  padding: 20px 50px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  padding: 20px 20px;
+}
+
+.card img {
+  width: 40%;
+}
+
+.card h3 {
+  margin: 20px 0;
+  color: gray;
+}
+
+.card h6 {
+  color: gray;
+}
+/* ..footer */
+
+.links {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding-top: 35px;
+}
+.links p {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+.links h6 {
+  color: black;
+}
+.links-inner {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.links li {
+  line-height: 2.8;
+}
+
+footer #subscribe {
+  margin: 20px 0px 30px;
+}
+
+input#subscriber-email {
+  outline: none;
+  padding: 8px;
+  background: #496a86;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 4px 0px 0px 4px;
+}
+
+input#subscriber-email::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input#subscriber-email:-ms-input-placeholder {
+  color: #fff;
+}
+input#subscriber-email::-ms-input-placeholder {
+  color: #fff;
+}
+
+input#subscriber-email::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
+  }
+  .abt {
+    border-radius: 2px;
+    max-width: 95%;
+    margin-top: 5%;
+
+    background-color: whitesmoke;
+  }
+  .head h1 {
+    font-size: 300%;
+    color: white;
+  }
+
+  .head h4 {
+    color: white;
+    font-weight: 300;
+    padding-bottom: 100px;
+  }
+  .head {
+    position: absolute;
+    margin-left: 4%;
+    margin-top: -65%;
+  }
+}

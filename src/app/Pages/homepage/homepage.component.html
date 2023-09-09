@@ -1,0 +1,320 @@
+<!-- ... -->
+
+<!-- ... -->
+
+<!-- Nav -->
+<div
+  class="banner"
+  [ngStyle]="{ 'background-image': 'url(' + currentImage + ')' }"
+>
+  <nav class="navbar navbar-expand-lg main-nav">
+    <div class="dark-overlay2"></div>
+    <div class="container-fluid">
+      <a href=""
+        ><img src="../assets/logo-1.svg" alt="Microsoft" class="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li style="margin-left: 10px" class="nav-item">
+            <a href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about">About us</a>
+          </li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#home3">Case Studies</a></li>
+          <li class="nav-item"><a href="blog">Blog</a></li>
+          <li class="nav-item"><a href="#foot">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dark-overlay"></div>
+</div>
+
+<div
+  class="cont"
+  style="position: absolute; margin-top: -500px; margin-left: 2%; color: white"
+>
+  <h5>Reveal Your Enemy</h5>
+  <h1>PROTECTIVE DNS BUILT ON ADVANCED THREAT INTELLIGENCE</h1>
+  <h5 style="font-weight: 300">
+    Detect and identify cyber threat adversary infrastructure in your network to
+    stop cyber attacks before they happen.
+  </h5>
+</div>
+
+<!-- <About Us -->
+
+<div class="about" id="to-about">
+  <h1>About Us</h1>
+  <p>
+    Most organizations do not know they have been breached until it’s too late.
+  </p>
+  <p>
+    Even if an attack has bypassed a network’s perimeter defenses - and
+    regardless of how the breach occurred - it still must “beacon out” for
+    instructions to its command-and-control (C2), or adversary infrastructure,
+    in order to initiate. HYAS Adversary Infrastructure Platform detects and
+    blocks the beaconing requests of malicious and anomalous command-and-control
+    communication and stops attackers from progressing.
+  </p>
+  <h1 style="margin-top: 20px">Meet Our Dedicated Team</h1>
+  <div class="test">
+    <h1>
+      {{ change }}
+    </h1>
+    <h6>
+      <span>{{ name }}</span> {{ changetitle }}.
+    </h6>
+
+    <div class="col-lg-12">
+      <ul class="testimonials">
+        <li (click)="call()">
+          <img src="../assets/testimonial-1.jpg" alt="" />
+        </li>
+        <li (click)="call2()" class="testing">
+          <img src="../assets/testimonial-2.jpg" alt="" />
+        </li>
+        <li (click)="call3()">
+          <img src="../assets/testimonial-3.jpg" alt="" />
+        </li>
+        <li (click)="call4()">
+          <img src="../assets/testimonial-4.jpg" alt="" />
+        </li>
+        <li (click)="call5()">
+          <img src="../assets/testimonial-5.jpg" alt="" />
+        </li>
+        <li (click)="call6()">
+          <img src="../assets/testimonial-6.jpg" alt="" />
+        </li>
+        <li (click)="call7()">
+          <img src="../assets/testimonial-7.jpg" alt="" />
+        </li>
+        <li (click)="call8()">
+          <img src="../assets/testimonial-8.jpg" alt="" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ...services -->
+
+<div class="service" id="services">
+  <h1 style="margin-left: 20px">
+    Hyas Technologies: Technology Solutions for a Digital Future
+  </h1>
+
+  <section id="network">
+    <h2>Network Infrastructure</h2>
+    <p>
+      Hyas Technologies provides a robust network infrastructure that enables
+      seamless communication and data transfer within your organization. Our
+      local area network (LAN) and wide area network (WAN) solutions are
+      designed for reliability, scalability, and security.
+    </p>
+  </section>
+
+  <section id="development">
+    <h2>Software Development</h2>
+    <p>
+      Our software development team crafts tailored solutions to address your
+      business needs. From custom applications that meet unique requirements to
+      web and mobile apps that provide engaging user experiences, we harness the
+      power of technology to drive your success.
+    </p>
+  </section>
+
+  <section id="cybersecurity">
+    <h2>Cybersecurity</h2>
+    <p>
+      At Hyas Technologies, cybersecurity is a top priority. Our advanced threat
+      detection and prevention measures safeguard your data from external
+      threats. With encryption, multi-factor authentication, and regular
+      compliance audits, we ensure your digital assets remain secure.
+    </p>
+  </section>
+
+  <section id="cloud">
+    <h2>Cloud Services</h2>
+    <p>
+      Our cloud services offer a scalable and flexible solution for your
+      computing needs. Whether it's cloud infrastructure, platform as a service
+      (PaaS), or software as a service (SaaS), we empower your business to
+      innovate and grow with the latest cloud technologies.
+    </p>
+  </section>
+
+  <section id="consulting">
+    <h2>Consulting</h2>
+    <p>
+      Hyas Technologies offers strategic IT planning, digital transformation
+      guidance, and risk management consulting. We collaborate with your team to
+      align technology with your business goals, ensuring you make informed
+      decisions that drive efficiency and innovation.
+    </p>
+  </section>
+</div>
+
+<!-- blog -->
+<div class="blog" id="blogs">
+  <h1 style="margin-left: 20px">Blogs</h1>
+  <section class="home-cards">
+    <div class="card">
+      <h1>
+        <a
+          class="cardhead"
+          href="https://www.hyas.com/blog/how-to-keep-your-crypto-wallet-safe"
+          >How to Keep Your Crypto Wallet Safe</a
+        >
+      </h1>
+      <p>August 16, 2023</p>
+      <h3>
+        Author: Kell van Daal Rising Crypto Exchange Rates = Rising Threats
+        Though Bitcoin’s value has ...
+      </h3>
+      <button type="button" class="btn btn-outline-light">
+        <a href="#" style="color: white">Read More</a>
+      </button>
+    </div>
+    <div class="card">
+      <h1>
+        <a
+          class="cardhead"
+          href="https://www.hyas.com/blog/eyespy-proof-of-concept"
+          >EyeSpy Proof-of-Concept</a
+        >
+      </h1>
+      <p>August 2, 2023</p>
+      <h3>
+        Introducing EyeSpy: A Cognitive Threat Agent At HYAS Labs, we spend a
+        lot of time theorizing what ...
+      </h3>
+      <button type="button" class="btn btn-outline-light">
+        <a href="#" style="color: white">Read More</a>
+      </button>
+    </div>
+  </section>
+</div>
+
+<!-- ....case study -->
+
+<h1 style="margin-left: 20px">Case Study</h1>
+<section class="home-cards" id="home3">
+  <div class="card">
+    <h1>
+      <a
+        style="color: white"
+        class="cardhead"
+        href="https://www.hyas.com/blog/how-to-keep-your-crypto-wallet-safe"
+        >The Rise of the Startup CCO: Meet Mike Barker of ...</a
+      >
+    </h1>
+    <p style="color: white">August 23, 2023</p>
+    <h3 style="color: white">
+      HYAS Chief Commercial Officer (CCO), Mike Barker, has a broad and deep
+      background in engineering as ...
+    </h3>
+    <button type="button" class="btn btn-outline-light">
+      <a
+        href="https://www.hyas.com/blog/the-rise-of-the-startup-cco-meet-mike-barker-of-hyas"
+        style="color: white"
+        >Read More</a
+      >
+    </button>
+  </div>
+  <div class="card">
+    <h1>
+      <a
+        style="color: white"
+        class="cardhead"
+        href="https://www.hyas.com/blog/how-to-keep-your-crypto-wallet-safe"
+        >The Rise of the Startup CCO: Meet Mike Barker of ...</a
+      >
+    </h1>
+    <p style="color: white">August 23, 2023</p>
+    <h3 style="color: white">
+      HYAS Chief Commercial Officer (CCO), Mike Barker, has a broad and deep
+      background in engineering as ...
+    </h3>
+    <button type="button" class="btn btn-outline-light">
+      <a
+        href="https://www.hyas.com/blog/the-rise-of-the-startup-cco-meet-mike-barker-of-hyas"
+        style="color: white"
+        >Read More</a
+      >
+    </button>
+  </div>
+</section>
+
+<!-- Footer-->
+<section class="links" id="foot">
+  <div class="links-inner">
+    <ul>
+      <div class="d-flex" style="gap: 10px">
+        <li><img src="../assets/logo-1.svg" alt="" /></li>
+        <p>
+          No matter how or why malware gets into your network, the HYAS
+          Adversary Infrastructure Platform can detect, identify, and block it
+          before an attack can occur.
+        </p>
+      </div>
+
+      <h6 style="margin-top: 10px">123 Tech Street</h6>
+      <h6>Cityville, IT 12345</h6>
+      <h6>Phone: +1 (123) 456-7890</h6>
+      <h6>Email: info@hyastechnologies.com</h6>
+      <br />
+      <a href="https://facebook.com">
+        <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook" /> </a
+      >&nbsp;
+      <a href="https://twitter.com">
+        <img
+          src="https://i.ibb.co/vJvbLwm/social-twitter.png"
+          alt="Twitter"
+        /> </a
+      >&nbsp;
+      <a href="https://linkedin.com">
+        <img
+          src="https://i.ibb.co/b30HMhR/social-linkedin.png"
+          alt="Linkedin"
+        /> </a
+      >&nbsp;
+      <a href="https://linkedin.com">
+        <img
+          style="height: 30px; width: 30px"
+          src="../assets/instagram.png"
+          alt="Linkedin"
+        />
+      </a>
+    </ul>
+    <ul>
+      <span style="font-size: 50px" class="footer-cat">Stay Connected</span>
+      <form id="subscribe" style="margin-top: 20px">
+        <input
+          style="height: 45px"
+          type="email"
+          id="subscriber-email"
+          placeholder="Enter Email Address"
+        />
+        <button type="button" class="btn btn-outline-danger">Subscribe</button>
+      </form>
+    </ul>
+  </div>
+</section>
