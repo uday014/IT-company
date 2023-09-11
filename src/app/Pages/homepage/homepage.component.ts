@@ -61,9 +61,9 @@ export class HomepageComponent implements OnInit {
   }
 
   images: string[] = [
-    '../assets/img-1.webp',
-    '../assets/img-2.jpg',
-    '../assets/img-3.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKVLJ2Ta9BM-CNmiyRC69dXVQthq2mkfKANQ',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXDKRck1-ZcbwBR7Cd3atsbj_g6aT3CBQNnw',
+    'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5zVWv9E-wxo1MvKUg67F6KHtzkbFHeS_nLl8eKN3WLmgsyn8X',
     // Add more image URLs here
   ];
   currentImageIndex: number = 0;
